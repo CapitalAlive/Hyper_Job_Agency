@@ -1,0 +1,9 @@
+{% block content %} 
+
+{% for item in data %}
+    <div>
+        {{item.author.username}}: {{item.description}}
+    </div>
+{% endfor %}
+
+{% endblock %} 

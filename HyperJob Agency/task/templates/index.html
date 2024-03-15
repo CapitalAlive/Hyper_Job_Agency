@@ -1,0 +1,15 @@
+<h2>Welcome to HyperJob!</h2>
+
+
+<a href="{%url 'login_url'%}">Login page</a><br>
+<a href="/logout">Logout page</a><br>
+<a href="/signup">Sign-up</a><br>
+<a href="/vacancies">Vacancy list</a><br>
+<a href="/resumes">Resume list</a><br>
+<a href="/home">Personal profile</a><br>
+
+
+<form method="post" action="{%url 'logout_url' %}">
+    {%csrf_token%}
+    <button>logout</button>
+</form>
